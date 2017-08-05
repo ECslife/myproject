@@ -1,0 +1,16 @@
+﻿@model MvcApplication1.Models.Account
+
+@using (Html.BeginForm("save", "Home"))
+{
+
+@Html.LabelFor(a => a.ID)
+@Html.EditorFor(a => a.ID)
+
+@Html.LabelFor(a => a.name)
+@Html.EditorFor(a => a.name)
+
+@Html.LabelFor(a => a.age)
+@Html.EditorFor(a => a.age)
+
+<input type="submit"   value="save"/>
+}
